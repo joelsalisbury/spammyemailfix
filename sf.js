@@ -9,7 +9,7 @@ Element.prototype.addEventListeners = function(events, f) {
  for (l of ls) {
  	l.addEventListeners(["touchstart","click"], function (){ 
   	var n = this.getAttribute('data-sfname');
-    var f = this.getAttribute('data-sfdomain');
+    var d = this.getAttribute('data-sfdomain');
     var f = "mailto:" + n + "@" + d;
     this.setAttribute('href', full );
   });
