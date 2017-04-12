@@ -11,7 +11,7 @@ Element.prototype.addEventListeners = function(events, f) {
   	var n = this.getAttribute('data-sfname');
     var d = this.getAttribute('data-sfdomain');
     var f = "mailto:" + n + "@" + d;
-    this.setAttribute('href', full );
+    this.setAttribute('href', f );
   });
  }
   console.log("ran the spamfree link thingy");
